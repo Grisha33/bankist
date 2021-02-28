@@ -28,7 +28,7 @@ const account3 = {
 
 const account4 = {
   owner: 'Grișa Rusu',
-  movements: [430, 1000, 700, 50, 90],
+  movements: [430,-30, 1000,-150, 700, 50, 90,-900],
   interestRate: 1,
   pin: 4444,
 };
