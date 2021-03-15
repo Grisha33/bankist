@@ -104,6 +104,8 @@ const formatCur = function (value, locale, currency) {
   }).format(value);
 };
 
+let sorted = false;
+
 const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = '';
 
@@ -302,11 +304,11 @@ btnClose.addEventListener('click', function (e) {
   inputCloseUsername.value = inputClosePin.value = '';
 });
 
-let sorted = false;
 btnSort.addEventListener('click', function (e) {
   e.preventDefault();
-  displayMovements(currentAccount.movements, !sorted);
+  displayMovements(currentAccount, !sorted);
   sorted = !sorted;
+  console.log(currentAccount);
 });
 
 /////////////////////////////////////////////////
